@@ -17,29 +17,96 @@ body {
 	margin: 0;
 	font-size: 16px;
 	font-family: "AvenirMedium";
+    background-image: url("../images/fondo_body.png");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /** header **/
 .menu{
-    background-color: #e2e2e2;
+    background: radial-gradient(circle at 10% 20%, rgba(36, 153, 238) 0%, rgb(101, 255, 252, 0.87) 90%);
     color:black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .menu .logo img{
-    width: 150px;
+    width: 100px;
 }    
 .menu .items> a{
     padding-left: 15px;
     padding-right: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+/** blog **/
+.blog {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.blog .posts {
+    display: grid;
+    grid-template-columns: repeat(3/1fr);
+    column-gap: 5px;
+}
+.blog .posts .post_left{
+    padding:20px;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+.blog .posts .post_middle{
+    padding:20px;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+.blog .posts .post_right{
+    padding:20px;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+.blog .posts .info{
+    text-align: left;
+    background-color: white;
+}
+.blog .posts img{
+    width: 100%;
+}    
+
+/** contacto **/
+.contacto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contacto .contacto-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}    
+.contacto .contacto-box form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:20px;
+    text-align: left;
+}
+
+.contacto .contacto-box form input, textarea {
+    padding: 10px 0px;
+    width: 100%; 
+}   
+.contacto .contacto-box form .mensaje {
+    margin-bottom: 0;
 }
 
 /** footer */
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f96c43 ;
+    background: radial-gradient(circle at 10% 20%, rgba(101, 255, 252, 0.87) 0%, rgb(36, 153, 238) 90%);
     color:white;
     display: grid;
     grid-template-columns: repeat(8/1fr);
@@ -61,7 +128,7 @@ footer .logo {
     text-align: center;
 }
 footer .logo img {
-    width: 300px;
+    width: 150px;
 }    
 
 footer  .tienda{
@@ -79,6 +146,18 @@ footer .siguenos{
     grid-column-end: 7;
     list-style: none;
 }
+footer .siguenos .social{
+    float: left;
+}    
+
+footer .siguenos .social_facebook, .social_twitter, .social_instagram{
+    width: 30px;
+    transition: transform .2s;
+}    
+footer .siguenos .social_facebook:hover, .social_twitter:hover, .social_instagram:hover{
+    transform: scale(1.5);
+} 
+
 footer .contacto{
     grid-column-start: 7;
     grid-column-end: 8;

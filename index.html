@@ -4,35 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css styles -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Aquarama</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <title>Aquarama México</title>
 </head>
 <body>
     <header>
         <div class="menu">
             <div class="logo">
-                <a><img src="images/logo_aquarama.png"></a>
+                <a href="index.html"><img src="images/logo_aquarama.png"></a>
             </div>
             <div class="items">
-                <a>Tienda</a>
-                <a>Iniciar sesión</a>
-                <a>Registrate</a>
-                <a>Contacto</a>
+                <a href="#!">Tienda</a>
+                <a href="#!">Iniciar sesión</a>
+                <a href="#!">Registrate</a>
+                <a href="#!">Contacto</a>
             </div>
         </div>    
     </header>
-    <jumbotron>
+    <section class="jumbotron">
         
         
         
-    </jumbotron>
-    <blog>
-        
-    </blog>
+    </section>
+    <section class="blog">
+        <h2>Blog</h2>
+        <p>Entérate de las noticias más recientes</p>
+        <div class="posts">
+            <div class="post_left">
+                <img src="images/400x400.png">
+                <div class="info">
+                    <h4>Titulo</h4>
+                    <p>Texto</p>
+                    <a>Leer más</a>
+                </div>
+            </div>
+            <div class="post_middle">
+                <img src="images/400x400.png">
+                <div class="info">
+                    <h4>Titulo</h4>
+                    <p>Texto</p>
+                    <a>Leer más</a>
+                </div>
+            </div>
+            <div class="post_right">
+                <img src="images/400x400.png">
+                <div class="info">
+                    <h4>Titulo</h4>
+                    <p>Texto</p>
+                    <a>Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>Solicita una cotización sin compromiso</p>
+        <div class="contacto-box">
+            <form>
+                <h4>Nombre:
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+                </h4>
+                
+                <h4>Teléfono:
+                    <input type="tel" name="telefono" placeholder="Escribe tu teléfono" required>
+                </h4>
+                
+                <h4>Correo:
+                    <input type="email" name="correo" placeholder="Escribe tu correo" required>
+                </h4>    
+                
+                <h4 class="mensaje">Mensaje:</h4>
+                <textarea name="mensaje" placeholder="Mensaje" rows="5"></textarea>
+                
+                <br><br>
+                <button type="submit" name="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     
     <footer>
         <div class="logo">
-            <a href="#!"><img src="images/logo_aquarama.png"></a>
+            <a href="index.html"><img src="images/logo_aquarama_flipped.png"></a>
         </div>
         <ul class="tienda">
             <li class="cabecera">Tienda</li>
@@ -46,14 +103,14 @@
         </ul>
         <ul class="siguenos">
             <li class="cabecera">Siguenos</li>
-            <li><a href="#!">Facebook</a></li>
-            <li><a href="#!">Twitter</a></li>
-            <li><a href="#!">Instagram</a></li>
+            <li class="social"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="social_facebook"></a></li>
+            <li class="social"><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="social_twitter"></a></li>
+            <li class="social"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" class="social_instagram"></a></li>
         </ul>
         <ul class="contacto">
             <li class="cabecera">Contacto</li>
             <li><span>Teléfono: 5585989082</span></li>
-            <li><span>Correo: eafo72@gmail.com</span></li>
+            <li><span>Correo: contacto@aquaramamexico.com</span></li>
         </ul>
     </footer>
 </body>
