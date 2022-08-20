@@ -1,0 +1,86 @@
+/** fonts **/
+@font-face {
+	font-family: AvenirBlack;
+	src: local('AvenirLT95Black'), url('../fonts/AvenirLT95Black.ttf');
+}
+@font-face {
+	font-family: AvenirBook;
+	src: local('AvenirLTStd-Book'), url('../fonts/AvenirLTStd-Book.otf');
+}
+@font-face {
+	font-family: AvenirMedium;
+	src: local('AvenirLTStd-Medium'), url('../fonts/AvenirLTStd-Medium.otf');
+}
+/** body **/
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-family: "AvenirMedium";
+}
+
+/** header **/
+.menu{
+    background-color: #e2e2e2;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu .logo img{
+    width: 150px;
+}    
+.menu .items> a{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/** footer */
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f96c43 ;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(8/1fr);
+}
+footer li {
+    padding:5px 0px;
+}
+footer li a, span {
+    color: black;
+    text-decoration: none;
+}
+footer .cabecera{
+    font-weight: 800;
+    color:white;
+}
+footer .logo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+footer .logo img {
+    width: 300px;
+}    
+
+footer  .tienda{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    list-style: none;
+}
+footer .legales{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    list-style: none;
+}
+footer .siguenos{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    list-style: none;
+}
+footer .contacto{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    list-style: none;
+}
