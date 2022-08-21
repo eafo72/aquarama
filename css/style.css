@@ -1,22 +1,22 @@
 /** fonts **/
 @font-face {
-	font-family: AvenirBlack;
-	src: local('AvenirLT95Black'), url('../fonts/AvenirLT95Black.ttf');
+    font-family: AvenirBlack;
+    src: local('AvenirLT95Black'), url('../fonts/AvenirLT95Black.ttf');
 }
 @font-face {
-	font-family: AvenirBook;
-	src: local('AvenirLTStd-Book'), url('../fonts/AvenirLTStd-Book.otf');
+    font-family: AvenirBook;
+    src: local('AvenirLTStd-Book'), url('../fonts/AvenirLTStd-Book.otf');
 }
 @font-face {
-	font-family: AvenirMedium;
-	src: local('AvenirLTStd-Medium'), url('../fonts/AvenirLTStd-Medium.otf');
+    font-family: AvenirMedium;
+    src: local('AvenirLTStd-Medium'), url('../fonts/AvenirLTStd-Medium.otf');
 }
 /** body **/
 body {
-	padding: 0;
-	margin: 0;
-	font-size: 16px;
-	font-family: "AvenirMedium";
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "AvenirMedium";
     background-image: url("../images/fondo_body.png");
     background-attachment: fixed;
     background-size: cover;
@@ -40,53 +40,97 @@ body {
     text-decoration: none;
 }
 
+/** jumbotron **/
+.jumbotron {
+    background-color: black;
+    display: flex;
+}
+.jumbotron .texto{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}    
+.jumbotron .texto span{
+    font-size: 2rem;
+    color:rgba(36, 153, 238);
+}
+.jumbotron .texto button{
+    font-size: 2rem;
+    background-color:rgba(36, 153, 238);
+    color:black;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.jumbotron .texto button:hover{
+    color:white;
+}
+
+.jumbotron .imagen{
+    width: 50vw;
+}    
+
+
+
+
 /** blog **/
 .blog {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
+.blog h2{
+    color:rgba(36, 153, 238);
+    font-family: AvenirBlack;
+}
 .blog .posts {
     display: flex;
     justify-content:space-between ;
     margin-left:10vw;
     margin-right:10vw;
-
+    
 }
 .blog .posts .post_left{
     padding:20px;
-
+    
 }
 .blog .posts .post_middle{
     padding:20px;
-
+    
 }
 .blog .posts .post_right{
     padding:20px;
-
+    
 }
 .blog .posts .info{
     text-align: left;
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
+    background: radial-gradient(circle at 10% 20%, rgba(36, 153, 238) 0%, rgb(101, 255, 252, 0.87) 90%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 5px;
     margin-top: -5px;
 }
 .blog .posts .info h4{ 
+    color:white;
     margin-bottom: 0;
 }  
 .blog .posts .info p{ 
-    color:#b1a0a0;
+    color:white;
     font-family: AvenirBook;
     margin-top: 0;
 }  
 .blog .posts .info a{ 
     font-size: 14px;
-    color:red;
+    color:black;
     text-decoration: none;
-
+    
 }    
+.blog .posts .info a:hover{ 
+    color:red;
+} 
 .blog .posts .info .fecha{ 
     font-size: 12px;
     color:#b1a0a0;
@@ -104,6 +148,10 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+.contacto h2{
+    color:rgba(36, 153, 238);
+    font-family: AvenirBlack;
 }
 .contacto .contacto-box {
     display: grid;
