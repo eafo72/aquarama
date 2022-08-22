@@ -39,6 +39,15 @@ body {
     color: black;
     text-decoration: none;
 }
+.menu .items> a:hover{
+    color:white;
+}    
+/** Header Responsive **/
+@media screen and (max-width: 600px){
+    .menu .items> a{
+        display: block;
+    }
+}
 
 /** jumbotron **/
 .jumbotron {
@@ -71,8 +80,41 @@ body {
 .jumbotron .imagen{
     width: 50vw;
 }    
+/** Jumbotron Responsive **/
+@media screen and (max-width: 700px){
+    .jumbotron .texto span{
+        font-size: 1.2rem !important;
+    }   
+    .jumbotron .texto button{
+        font-size: 1.2rem !important;
+    }   
+}    
+@media screen and (max-width: 1200px){
+	.jumbotron{	
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
+	}
+    .jumbotron .texto{
+        margin-top: 40px;
+        width: 80vw;
+    } 
+        
+    .jumbotron .imagen{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
 
+@media screen and (max-width: 1400px){
+    .jumbotron .texto span{
+        font-size: 1.7rem;
+    } 
+    .jumbotron .texto button{
+        font-size: 1.7rem;
+    }
+}    
 
 
 /** blog **/
@@ -142,6 +184,15 @@ body {
     border-top-right-radius: 10px;
     width: 100%;
 }    
+/** Blog Responsive **/
+@media screen and (max-width: 992px){
+    .blog .posts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }   
+}
+
 
 /** contacto **/
 .contacto {
@@ -174,6 +225,31 @@ body {
 .contacto .contacto-box form .mensaje {
     margin-bottom: 0;
 }
+.contacto button{
+    font-size: 1rem;
+    background-color:rgba(36, 153, 238);
+    color:black;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+.contacto button:hover{
+    color:white;
+}
+
+/** contacto Responsive **/
+@media screen and (max-width: 992px){
+    .contacto .contacto-box {
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }   
+    .contacto .contacto-box form{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }   
+}
 
 /** footer */
 footer {
@@ -190,6 +266,9 @@ footer li {
 footer li a, span {
     color: black;
     text-decoration: none;
+}
+footer li a:hover{
+    color: white;
 }
 footer .cabecera{
     font-weight: 800;
@@ -231,8 +310,54 @@ footer .siguenos .social_facebook:hover, .social_twitter:hover, .social_instagra
     transform: scale(1.5);
 } 
 
-footer .contacto{
+footer .contactanos{
     grid-column-start: 7;
     grid-column-end: 8;
     list-style: none;
+    
+}
+
+/** footer Responsive **/
+@media screen and (max-width: 992px){
+    footer .siguenos{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }   
+    footer .contactanos{
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+}
+@media screen and (max-width: 600px){
+    footer .legales{    
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }    
+    footer .siguenos{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }   
+    footer .contactanos{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+}
+
+@media screen and (max-width: 450px){
+    footer .tienda{    
+        grid-column-start: 1;
+        grid-column-end: 4;
+    } 
+    footer .legales{    
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }    
+    footer .siguenos{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }   
+    footer .contactanos{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }
