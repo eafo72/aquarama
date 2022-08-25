@@ -148,7 +148,6 @@ body {
 }
 .blog .posts .info{
     text-align: left;
-    /*background-color: #f7f7f7;*/
     background: radial-gradient(circle at 10% 20%, rgba(36, 153, 238) 0%, rgb(101, 255, 252, 0.87) 90%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -221,6 +220,7 @@ body {
 .contacto .contacto-box form input, textarea {
     padding: 10px 0px;
     width: 100%; 
+    font-family: "AvenirMedium";
 }   
 .contacto .contacto-box form .mensaje {
     margin-bottom: 0;
